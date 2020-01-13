@@ -81,15 +81,33 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
+// a = 4
+// b = 7
+// c = 5
+// sumDeuce = 11
+// sumTres = 16
+// multDeuce = 28
+// multTres = 140
+
+
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+var index0 = testArray[0]; //equals 2
+var index1 = testArray[1]; //equals 3
+var index2 = testArray[2]; //equals 4
+var sumDeuce = sum(index0,index1)[0]; //equals 5
+var sumTres = sum(sumDeuce,index2)[0]; // equals 9 
 
+// console.log(sumTres);
+
+  return [sumTres, + index0 + ',' + index1 + ',' + index2 + ' was passed in as an array of numbers, and ' + sumTres + ' is their sum.'];
+  // console.log(test);
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
